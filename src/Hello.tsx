@@ -1,3 +1,5 @@
-const Hello = () => <h1>Hello from React with Typescript!</h1>;
+function App() {
+    return <h1>Hello World</h1>
+}
 
-export default Hello;
+export default App;
