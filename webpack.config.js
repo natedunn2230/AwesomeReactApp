@@ -22,6 +22,10 @@ module.exports = {
         test: /\.css$/i,
         use: ["style-loader", "css-loader"],
       },
+      {
+        test: /\.(glb|gltf)$/,
+        loader:"file-loader",
+    },
     ],
   },
   resolve: {
