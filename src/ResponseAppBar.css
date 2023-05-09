@@ -1,0 +1,7 @@
+.hamburger-link:link,
+.hamburger-link:visited,
+.hamburger-link:hover,
+.hamburger-link:active {
+    text-decoration: none;
+    color: black;
+}
