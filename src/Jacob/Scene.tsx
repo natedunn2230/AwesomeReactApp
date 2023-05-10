@@ -2,10 +2,11 @@ import * as THREE from 'three'
 import { createRoot } from 'react-dom/client'
 import { useRef, useState } from 'react'
 import { Canvas, useFrame, ThreeElements } from '@react-three/fiber'
-import { OrbitControls } from '@react-three/drei'
+import { OrbitControls } from '@react-three/drei';
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
 import { useLoader } from "@react-three/fiber";
 //import myGLBFile from '../bortnight.glb';
+import "./Scene.css";
 
 function Box(props: ThreeElements['mesh']) {
   const ref = useRef<THREE.Mesh>(null!)
@@ -39,7 +40,7 @@ const Model = () => {
 
 function Scene (){
   return(
-    <Canvas style={{display: 'flex', alignItems: "center", justifyContent:"center"}}>
+    <Canvas >
     
     <ambientLight />
     <pointLight position={[10, 10, 10]} />

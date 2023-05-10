@@ -1,7 +1,7 @@
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import Jacob from './Jacob/Jacob';
 import Nate from './Nate/Nate';
-
+import "./Hello.css"
 import ResponsiveAppBar from './ResponsiveAppBar';
 
 function AppRouter() {
@@ -20,12 +20,14 @@ function AppRouter() {
 
 function App() {
    return(
-        <>
-            <BrowserRouter>
+    <div className= "app">
+        <BrowserRouter>
                 <ResponsiveAppBar />
                 <AppRouter />
             </BrowserRouter>
-        </>
+
+    </div>
+            
    );
 }
 

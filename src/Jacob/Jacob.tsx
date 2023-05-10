@@ -1,10 +1,13 @@
 import Scene from "./Scene";
+import "./Jacob.css";
 
 function Jacob () {
     return(
         <>
-        <h1>Jacob page</h1>
-        <Scene />
+            <div className="container">
+                <Scene />
+            </div>
+        
         </>
         
     );
